@@ -1,6 +1,6 @@
 # SimpleChat
 
-##A very simple chat, based on node.js, express.js, mongo.db and socket.io
+## A very simple chat, based on node.js, express.js, mongo.db and socket.io
 
 I developed this application during the screencast https://learn.javascript.ru/screencast/nodejs
 
