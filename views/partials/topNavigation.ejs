@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+
+  <ul class="nav navbar-nav">
+
+    <li class="nav-item" ><a class="nav-link" href="/">Главная</a></li>
+
+    <% if (user) { %>
+
+    <li class="nav-item"><a class="nav-link" href="/chat">Чат</a></li>
+
+    <% } %>
+
+  </ul>
+
+  <ul class="nav navbar-nav navbar-right">
+
+    <% if (user) { %>
+
+    <li class="nav-item"><a class="nav-link" href="" onclick="
+    var form = $('<form method=POST action=/logout>');
+    $(document.body).append(form);
+    form.submit();
+    return false
+
+    ">Выйти</a></form></li>
+
+    <% } else { %>
+
+    <li class="nav-item"><a class="nav-link" href="/login">Войти</a></li>
+
+    <% } %>
+
+  </ul>
+
+</nav>

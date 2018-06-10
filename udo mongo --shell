@@ -1,0 +1,13 @@
+[0;1;32m●[0m mongodb.service - LSB: An object/document-oriented database
+   Loaded: loaded (/etc/init.d/mongodb; generated)
+   Active: [0;1;32mactive (running)[0m since Fri 2018-05-25 21:14:55 MSK; 43s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 3275 ExecStart=/etc/init.d/mongodb start (code=exited, status=0/SUCCESS)
+    Tasks: 23 (limit: 4664)
+   CGroup: /system.slice/mongodb.service
+           └─3283 /usr/bin/mongod --config /etc/mongodb.conf
+
+мая 25 21:14:54 web-dev systemd[1]: Starting LSB: An object/document-oriented database...
+мая 25 21:14:54 web-dev mongodb[3275]:  * Starting database mongodb
+мая 25 21:14:55 web-dev mongodb[3275]:    ...done.
+мая 25 21:14:55 web-dev systemd[1]: Started LSB: An object/document-oriented database.
